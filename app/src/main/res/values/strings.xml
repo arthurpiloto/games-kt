@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Games</string>
+
+    <!--  Main Activity  -->
+    <string name="login">Login</string>
+    <string name="welcome">Welcome!</string>
+    <string name="welcome_text">With our app will be much easier and fun to maintain the control of your games!</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="remember">Remember me</string>
+    <string name="create_account">Sign up</string>
+    <string name="footer_text">Developed by DS2M</string>
+    <string name="email_error">Email is required!</string>
+    <string name="password_error">Password is required!</string>
+
+    <!--  Sign Up Activity  -->
+    <string name="new_account">New Account</string>
+    <string name="new_photo">Shall we choose a photo?</string>
+    <string name="authentication_title">Data for authentication</string>
+    <string name="personal_title">Personal data</string>
+    <string name="name">What is your name?</string>
+    <string name="name_error">Name is required!</string>
+    <string name="city">What is your city?</string>
+    <string name="city_error">City is required!</string>
+    <string name="birth_date">Birth date</string>
+    <string name="birth_date_error">Birth date is required!</string>
+    <string name="level">What is your gamer level?</string>
+    <string name="console">What is your favorite console?</string>
+    <string name="sex">Sex:</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string-array name="consoles">
+        <item>Super Nintendo</item>
+        <item>Playstation</item>
+    </string-array>
+
+    <!--  Game List Activity  -->
+    <string name="games_finished">Games Finished</string>
+    <string name="current_playing">Current Playing</string>
+    <string name="age">Age</string>
+    <string name="registered_games">Your registered games</string>
+<!--    <string name="street_fighter_subtitle">Capcom</string>-->
+<!--    <string name="street_fighter_title">Street Fighter</string>-->
+<!--    <string name="street_fighter_description">Street Fighter, popularly abbreviated to SF, is a popular fighting game series.</string>-->
+<!--    <string name="ninja_turtles_ii_subtitle">Konami</string>-->
+<!--    <string name="ninja_turtles_ii_title">Ninja Turtles II</string>-->
+<!--    <string name="ninja_turtles_ii_description">Teenage Mutant Ninja Turtles: Shredder\'s Revenge is a beat \'em up video game developed by Tribute Games.</string>-->
+</resources>
