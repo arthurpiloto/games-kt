@@ -3,10 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout/activity_game_list.xml" value="0.49780701754385964" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.4850877192982456" />
+        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.49780701754385964" />
+        <entry key="app/src/main/res/layout/holder_layout.xml" value="0.49780701754385964" />
+        <entry key="app/src/main/res/menu/menu_game_list.xml" value="0.49780701754385964" />
+        <entry key="app/src/main/res/menu/menu_signup.xml" value="0.49780701754385964" />
       </map>
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>

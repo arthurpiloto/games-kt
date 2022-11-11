@@ -17,13 +17,37 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f50ec957-edb8-4b4a-a3d8-5880d00ba90a" name="Changes" comment="" />
+    <list default="true" id="f50ec957-edb8-4b4a-a3d8-5880d00ba90a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/render.experimental.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/senai/sp/jandira/games/adapter/GamesAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/senai/sp/jandira/games/adapter/GamesAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/senai/sp/jandira/games/dao/GameDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/senai/sp/jandira/games/dao/game/GameDao.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/senai/sp/jandira/games/dao/GameDb.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/senai/sp/jandira/games/dao/game/GameDb.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/senai/sp/jandira/games/dao/GamesDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/senai/sp/jandira/games/dao/game/GamesDao.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/senai/sp/jandira/games/model/Game.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/senai/sp/jandira/games/model/Game.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/senai/sp/jandira/games/repository/GameRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/senai/sp/jandira/games/repository/GameRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/senai/sp/jandira/games/ui/GameListActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/senai/sp/jandira/games/ui/GameListActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_add.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_add.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_save.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_save.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_game_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_game_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_signup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_signup.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/22102321/.android/avd/Pixel_4_API_30.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/22102321/.android/avd/Pixel_4_API_30_New.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -64,6 +88,7 @@
         <option value="resourceFile" />
         <option value="layoutResourceFile" />
         <option value="Interface" />
+        <option value="Kotlin Enum" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
       </list>
@@ -84,7 +109,9 @@
     <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="2EqoWPkw2AKMQLXiupzfz6JAUhR" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -94,6 +121,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -105,6 +133,8 @@
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="br.senai.sp.jandira.games.dao.usuario" />
+      <recent name="br.senai.sp.jandira.games.dao.game" />
       <recent name="br.senai.sp.jandira.games.ui" />
     </key>
     <key name="android.template.-1708662345">
@@ -183,5 +213,17 @@
       <updated>1663332506705</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

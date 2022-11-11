@@ -1,29 +1,29 @@
 package br.senai.sp.jandira.games.repository
 
 import android.content.Context
-import br.senai.sp.jandira.games.dao.GameDb
+import br.senai.sp.jandira.games.dao.game.GameDb
 import br.senai.sp.jandira.games.model.Game
 
 class GameRepository(context: Context) {
-    private val db = GameDb.getDataBase(context).contactDao()
+    private val db = GameDb.getDataBase(context).gameDao()
 
-    fun save(contact: Game): Long {
-        return db.save(contact)
+    fun save(game: Game): Long {
+        return db.save(game)
     }
 
-    fun update(contact: Game): Int {
-        return db.update(contact)
+    fun update(game: Game): Int {
+        return db.update(game)
     }
 
-    fun delete(contact: Game): Int {
-        return db.delete(contact)
+    fun delete(game: Game): Int {
+        return db.delete(game)
     }
 
     fun getAll(): List<Game> {
         return db.getAll()
     }
 
-    fun getContactById(id: Int): Game {
-        return db.getContactById(id)
+    fun getGameById(id: Int): Game {
+        return db.getGameById(id)
     }
 }

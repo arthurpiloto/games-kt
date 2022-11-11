@@ -1,4 +1,4 @@
-package br.senai.sp.jandira.games.dao
+package br.senai.sp.jandira.games.dao.game
 
 import androidx.room.*
 import br.senai.sp.jandira.games.model.Game
@@ -18,5 +18,5 @@ interface GameDao {
     fun getAll(): List<Game>
 
     @Query("SELECT * FROM tbl_game WHERE id = :id")
-    fun getContactById(id: Int): Game
+    fun getGameById(id: Int): Game
 }

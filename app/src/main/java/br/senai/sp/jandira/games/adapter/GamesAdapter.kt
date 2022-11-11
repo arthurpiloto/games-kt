@@ -25,8 +25,7 @@ class GamesAdapter(val context: Context) : RecyclerView.Adapter<GamesAdapter.Hol
         val descriptionGame = view.findViewById<TextView>(R.id.text_view_descricao)
 
         fun bind(game: Game) {
-            imageHolderGame.setImageDrawable(game.imagem)
-            subtitleGame.text = game.subtitulo
+            subtitleGame.text = game.estudio
             titleGame.text = game.titulo
             descriptionGame.text = game.descricao
         }

@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/menu_signup_save"
+        android:icon="@drawable/ic_save"
+        android:iconTint="@color/white"
         android:title="Save"
-        app:showAsAction="always"
-        android:icon="@drawable/ic_save">
-    </item>
+        app:showAsAction="always"></item>
 </menu>

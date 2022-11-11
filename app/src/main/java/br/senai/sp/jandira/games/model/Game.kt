@@ -1,5 +1,6 @@
 package br.senai.sp.jandira.games.model
 
+import android.graphics.Bitmap
 import android.graphics.drawable.Drawable
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -9,8 +10,8 @@ class Game {
     @PrimaryKey(autoGenerate = true)
     var id = 0
 
-    var imagem: Drawable? = null
-    var subtitulo = ""
+//    var imagem: Bitmap? = null
+    var estudio = ""
     var titulo = ""
     var descricao = ""
 }
