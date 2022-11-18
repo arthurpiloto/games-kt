@@ -12,7 +12,9 @@
     <string name="create_account">Entrar</string>
     <string name="footer_text">Desenvolvido por DS2M</string>
     <string name="email_error">Email é obrigatório!</string>
+    <string name="email_notfound">Email não encontrado no Banco de Dados</string>
     <string name="password_error">Senha é obrigatória!</string>
+    <string name="password_notfound">Senha incorreta!</string>
 
     <!--  Sign Up Activity  -->
     <string name="new_account">Nova Conta</string>

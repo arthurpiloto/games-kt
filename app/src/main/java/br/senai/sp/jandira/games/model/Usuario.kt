@@ -16,7 +16,7 @@ class Usuario {
     var nivel: NiveisEnum = NiveisEnum.INICIANTE
     var sexo: Char = 'U'
 
-    @ColumnInfo(name = "data_nascimento")
+    //@ColumnInfo(name = "data_nascimento")
 //    var dataNascimento: LocalDate? = null
 
     var email = ""

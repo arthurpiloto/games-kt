@@ -14,7 +14,7 @@ abstract class UsuarioDb: RoomDatabase() {
         private lateinit var instance: UsuarioDb
 
         fun getDataBase(context: Context): UsuarioDb {
-            if (!Companion::instance.isInitialized) {
+            if (!::instance.isInitialized) {
                 instance = Room.databaseBuilder(context, UsuarioDb::class.java, "db_usuarios").allowMainThreadQueries().build()
             }
             return instance

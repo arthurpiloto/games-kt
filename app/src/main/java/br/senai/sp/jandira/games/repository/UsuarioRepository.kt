@@ -26,4 +26,8 @@ class UsuarioRepository(context: Context) {
     fun getUsuarioById(id: Int): Usuario {
         return db.getUsuarioById(id)
     }
+
+    fun getUsuarioByEmail(email: String): Usuario {
+        return db.getUsuarioByEmail(email)
+    }
 }
