@@ -35,6 +35,11 @@
         <item>Playstation</item>
     </string-array>
 
+    <string name="level_begginer">Iniciante</string>
+    <string name="level_basic">Básico</string>
+    <string name="level_casual">Casual</string>
+    <string name="level_advanced">Avançado</string>
+
     <!--  Game List Activity  -->
     <string name="games_finished">Jogos Finalizados</string>
     <string name="current_playing">Jogando Atualmente</string>
@@ -46,4 +51,9 @@
 <!--    <string name="ninja_turtles_ii_subtitle">Konami</string>-->
 <!--    <string name="ninja_turtles_ii_title">Tartarugas Ninjas II</string>-->
 <!--    <string name="ninja_turtles_ii_description">Teenage Mutant Ninja Turtles: Shredder\'s Revenge é um jogo eletrônico beat 'em up desenvolvido pela Tribute Games.</string>-->
+
+    <!--  Game Add Activity  -->
+    <string name="new_game">Novo Jogo</string>
+    <string name="photo_title">Selecione uma foto de capa</string>
+    <string name="information_title">Informações para salvar o jogo</string>
 </resources>

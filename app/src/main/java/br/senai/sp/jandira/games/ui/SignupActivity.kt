@@ -4,22 +4,70 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import br.senai.sp.jandira.games.R
 import br.senai.sp.jandira.games.databinding.ActivitySignupBinding
+import br.senai.sp.jandira.games.model.NiveisEnum
+import br.senai.sp.jandira.games.model.Usuario
+import br.senai.sp.jandira.games.repository.UsuarioRepository
 
 class SignupActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySignupBinding
+    lateinit var usuarioRepository: UsuarioRepository
+    lateinit var usuario: Usuario
+    private var id = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySignupBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        usuario = Usuario()
+
+        id = intent.getIntExtra("id", 0)
+
+        binding.sliderSignup.addOnChangeListener { slider, value, fromUser ->
+            binding.gamerLevelSignup.text = getSliderText(binding.sliderSignup.value.toInt()).toString()
+        }
+    }
+
+    private fun getSliderText(position: Int): NiveisEnum {
+        if (position <= 0) return NiveisEnum.INICIANTE
+        if (position in 1..1) return NiveisEnum.BASICO
+        if (position in 2..2) return NiveisEnum.CASUAL
+        if (position in 3..3) return NiveisEnum.AVANCADO
+        return NiveisEnum.INICIANTE
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.menu_signup_save) {
-            validate()
-            return true
+        if (item.title.toString() == "Save") {
+            if (validate()) {
+                usuario.nome = binding.editTextNameSignup.text.toString()
+                usuario.cidade = binding.editTextCitySignup.text.toString()
+                usuario.email = binding.editTextEmailSignup.text.toString()
+                usuario.senha = binding.editTextPasswordSignup.text.toString()
+
+                when(binding.sliderSignup.value.toString()) {
+                    "0" -> usuario.nivel = NiveisEnum.INICIANTE
+                    "1" -> usuario.nivel = NiveisEnum.BASICO
+                    "2" -> usuario.nivel = NiveisEnum.CASUAL
+                    "3" -> usuario.nivel = NiveisEnum.AVANCADO
+                }
+
+                if (binding.buttonFemaleSignup.isSelected) {
+                    usuario.sexo = 'F'
+                } else {
+                    usuario.sexo = 'M'
+                }
+
+                usuarioRepository = UsuarioRepository(this)
+                val id = usuarioRepository.save(usuario)
+                Toast.makeText(this, "ID: $id", Toast.LENGTH_SHORT).show()
+                finish()
+                return true
+            } else {
+                return false
+            }
         }
         return false
     }

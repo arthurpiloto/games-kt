@@ -2,6 +2,7 @@ package br.senai.sp.jandira.games.model
 
 import android.graphics.Bitmap
 import android.graphics.drawable.Drawable
+import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
@@ -14,4 +15,9 @@ class Game {
     var estudio = ""
     var titulo = ""
     var descricao = ""
+
+    var finalizado: Boolean = false
+
+    @ColumnInfo(name = "ano_lancamento")
+    var anoLancamento = ""
 }
