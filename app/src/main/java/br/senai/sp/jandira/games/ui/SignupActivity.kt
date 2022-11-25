@@ -24,8 +24,6 @@ class SignupActivity : AppCompatActivity() {
 
         usuario = Usuario()
 
-        id = intent.getIntExtra("id", 0)
-
         binding.sliderSignup.addOnChangeListener { slider, value, fromUser ->
             binding.gamerLevelSignup.text = getSliderText(binding.sliderSignup.value.toInt()).toString()
         }
@@ -47,11 +45,11 @@ class SignupActivity : AppCompatActivity() {
                 usuario.email = binding.editTextEmailSignup.text.toString()
                 usuario.senha = binding.editTextPasswordSignup.text.toString()
 
-                when(binding.sliderSignup.value.toString()) {
-                    "0" -> usuario.nivel = NiveisEnum.INICIANTE
-                    "1" -> usuario.nivel = NiveisEnum.BASICO
-                    "2" -> usuario.nivel = NiveisEnum.CASUAL
-                    "3" -> usuario.nivel = NiveisEnum.AVANCADO
+                when(binding.sliderSignup.value.toInt()) {
+                    0 -> usuario.nivel = NiveisEnum.INICIANTE
+                    1 -> usuario.nivel = NiveisEnum.BASICO
+                    2 -> usuario.nivel = NiveisEnum.CASUAL
+                    3 -> usuario.nivel = NiveisEnum.AVANCADO
                 }
 
                 if (binding.buttonFemaleSignup.isSelected) {
@@ -62,9 +60,8 @@ class SignupActivity : AppCompatActivity() {
 
                 usuarioRepository = UsuarioRepository(this)
                 val id = usuarioRepository.save(usuario)
-                Toast.makeText(this, "ID: $id", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, R.string.user_created, Toast.LENGTH_SHORT).show()
                 finish()
-                return true
             } else {
                 return false
             }

@@ -106,7 +106,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView8"
-        app:layout_constraintVertical_bias="0.008">
+        app:layout_constraintVertical_bias="0.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -138,6 +138,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="30dp"
                 android:ems="10"
+                android:fontFamily="@font/roboto"
                 android:hint="@string/email"
                 android:inputType="textEmailAddress"
                 android:textColorHint="@color/text_secondary"
@@ -151,6 +152,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:ems="10"
+                android:fontFamily="@font/roboto"
                 android:hint="@string/password"
                 android:inputType="textPassword"
                 android:textColorHint="@color/text_secondary"
@@ -180,8 +182,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:ems="10"
+                android:fontFamily="@font/roboto"
                 android:hint="@string/name"
                 android:inputType="textPersonName"
+                android:textColor="@color/black"
                 android:textColorHint="@color/text_secondary"
                 app:layout_constraintEnd_toEndOf="@+id/edit_text_password_signup"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -194,6 +198,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:ems="10"
+                android:fontFamily="@font/roboto"
                 android:hint="@string/city"
                 android:inputType="textPersonName"
                 android:textColorHint="@color/text_secondary"
@@ -207,6 +212,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:fontFamily="@font/roboto"
                 android:hint="@string/birth_date"
                 android:inputType="date"
                 android:textColorHint="@color/text_secondary"
@@ -319,193 +325,5 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
-
-    <!--    <TextView-->
-    <!--        android:id="@+id/textView11"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginStart="30dp"-->
-    <!--        android:layout_marginTop="24dp"-->
-    <!--        android:drawableStart="@drawable/ic_lock"-->
-    <!--        android:drawablePadding="8dp"-->
-    <!--        android:drawableTint="@color/blue_wave"-->
-    <!--        android:fontFamily="@font/roboto"-->
-    <!--        android:text="@string/authentication_title"-->
-    <!--        android:textColor="@color/blue_button"-->
-    <!--        android:textSize="16sp"-->
-    <!--        android:textStyle="bold"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/imageView8" />-->
-
-    <!--    <EditText-->
-    <!--        android:id="@+id/editTextTextEmailAddress"-->
-    <!--        android:layout_width="0dp"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginTop="8dp"-->
-    <!--        android:layout_marginEnd="30dp"-->
-    <!--        android:ems="10"-->
-    <!--        android:hint="@string/email"-->
-    <!--        android:inputType="textEmailAddress"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="@+id/textView11"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/textView11" />-->
-
-    <!--    <EditText-->
-    <!--        android:id="@+id/editTextTextPassword"-->
-    <!--        android:layout_width="0dp"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginTop="8dp"-->
-    <!--        android:ems="10"-->
-    <!--        android:hint="@string/password"-->
-    <!--        android:inputType="textPassword"-->
-    <!--        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"-->
-    <!--        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />-->
-
-    <!--    <TextView-->
-    <!--        android:id="@+id/textView12"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginTop="24dp"-->
-    <!--        android:drawableStart="@drawable/ic_lock"-->
-    <!--        android:drawablePadding="8dp"-->
-    <!--        android:drawableTint="@color/blue_wave"-->
-    <!--        android:fontFamily="@font/roboto"-->
-    <!--        android:text="@string/personal_title"-->
-    <!--        android:textColor="@color/blue_button"-->
-    <!--        android:textSize="16sp"-->
-    <!--        android:textStyle="bold"-->
-    <!--        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />-->
-
-    <!--    <EditText-->
-    <!--        android:id="@+id/editTextTextPersonName"-->
-    <!--        android:layout_width="0dp"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginTop="8dp"-->
-    <!--        android:ems="10"-->
-    <!--        android:hint="@string/name"-->
-    <!--        android:inputType="textPersonName"-->
-    <!--        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"-->
-    <!--        app:layout_constraintHorizontal_bias="0.0"-->
-    <!--        app:layout_constraintStart_toStartOf="@+id/textView12"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/textView12" />-->
-
-    <!--    <EditText-->
-    <!--        android:id="@+id/editTextTextPersonName2"-->
-    <!--        android:layout_width="0dp"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginTop="8dp"-->
-    <!--        android:ems="10"-->
-    <!--        android:hint="@string/city"-->
-    <!--        android:inputType="textPersonName"-->
-    <!--        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"-->
-    <!--        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />-->
-
-    <!--    <EditText-->
-    <!--        android:id="@+id/editTextDate"-->
-    <!--        android:layout_width="0dp"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:ems="10"-->
-    <!--        android:hint="@string/birth_date"-->
-    <!--        android:inputType="date"-->
-    <!--        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"-->
-    <!--        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />-->
-
-    <!--    <TextView-->
-    <!--        android:id="@+id/textView13"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginTop="24dp"-->
-    <!--        android:fontFamily="@font/roboto"-->
-    <!--        android:text="@string/level"-->
-    <!--        android:textColor="@color/text_secondary"-->
-    <!--        android:textSize="16sp"-->
-    <!--        app:layout_constraintStart_toStartOf="@+id/editTextDate"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />-->
-
-    <!--    <com.google.android.material.slider.Slider-->
-    <!--        android:id="@+id/slider"-->
-    <!--        android:layout_width="0dp"-->
-    <!--        android:layout_height="0dp"-->
-    <!--        android:layout_marginTop="8dp"-->
-    <!--        android:layout_marginEnd="32dp"-->
-    <!--        app:layout_constraintEnd_toStartOf="@+id/textView14"-->
-    <!--        app:layout_constraintHorizontal_bias="0.0"-->
-    <!--        app:layout_constraintStart_toStartOf="@+id/textView13"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/textView13" />-->
-
-    <!--    <TextView-->
-    <!--        android:id="@+id/textView14"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="32dp"-->
-    <!--        android:layout_marginTop="16dp"-->
-    <!--        android:fontFamily="@font/roboto"-->
-    <!--        android:text="Casual"-->
-    <!--        android:textColor="@color/blue_button"-->
-    <!--        android:textSize="24sp"-->
-    <!--        android:textStyle="bold"-->
-    <!--        app:layout_constraintEnd_toEndOf="@+id/editTextDate"-->
-    <!--        app:layout_constraintHorizontal_bias="0.9"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/textView13" />-->
-
-    <!--    <TextView-->
-    <!--        android:id="@+id/textView15"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginTop="16dp"-->
-    <!--        android:text="@string/console"-->
-    <!--        android:textColor="@color/text_secondary"-->
-    <!--        android:textSize="16sp"-->
-    <!--        app:layout_constraintStart_toStartOf="@+id/slider"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/slider" />-->
-
-    <!--    <androidx.appcompat.widget.AppCompatSpinner-->
-    <!--        android:id="@+id/appCompatSpinner"-->
-    <!--        android:layout_width="0dp"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginTop="8dp"-->
-    <!--        android:entries="@array/consoles"-->
-    <!--        app:layout_constraintEnd_toEndOf="@+id/editTextDate"-->
-    <!--        app:layout_constraintStart_toStartOf="@+id/textView15"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/textView15" />-->
-
-    <!--    <TextView-->
-    <!--        android:id="@+id/textView16"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginTop="16dp"-->
-    <!--        android:text="@string/sex"-->
-    <!--        android:textColor="@color/text_secondary"-->
-    <!--        app:layout_constraintStart_toStartOf="@+id/appCompatSpinner"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/appCompatSpinner" />-->
-
-    <!--    <RadioButton-->
-    <!--        android:id="@+id/radioButton"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginTop="8dp"-->
-    <!--        android:buttonTint="@color/text_secondary"-->
-    <!--        android:fontFamily="@font/roboto"-->
-    <!--        android:text="@string/woman"-->
-    <!--        android:textColor="@color/text_secondary"-->
-    <!--        app:layout_constraintStart_toStartOf="@+id/textView16"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/textView16" />-->
-
-    <!--    <RadioButton-->
-    <!--        android:id="@+id/radioButton3"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginStart="32dp"-->
-    <!--        android:layout_marginTop="8dp"-->
-    <!--        android:buttonTint="@color/text_secondary"-->
-    <!--        android:fontFamily="@font/roboto"-->
-    <!--        android:text="@string/male"-->
-    <!--        android:textColor="@color/text_secondary"-->
-    <!--        app:layout_constraintStart_toEndOf="@+id/radioButton"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/textView16" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -36,11 +36,7 @@
         <item>Super Nintendo</item>
         <item>Playstation</item>
     </string-array>
-
-    <string name="level_begginer">Iniciante</string>
-    <string name="level_basic">Básico</string>
-    <string name="level_casual">Casual</string>
-    <string name="level_advanced">Avançado</string>
+    <string name="user_created">Usuário criado com sucesso</string>
 
     <!--  Game List Activity  -->
     <string name="games_finished">Jogos Finalizados</string>
@@ -58,4 +54,11 @@
     <string name="new_game">Novo Jogo</string>
     <string name="photo_title">Selecione uma foto de capa</string>
     <string name="information_title">Informações para salvar o jogo</string>
+    <string name="hint_name_new_game">Nome do jogo</string>
+    <string name="hint_description_new_game">Descrição do jogo</string>
+    <string name="hint_producer_new_game">Estúdio do jogo</string>
+    <string name="launch_date">Data de lançamento</string>
+    <string name="game_status">Status do jogo:</string>
+    <string name="game_status_finished">Finalizado</string>
+    <string name="game_status_playing">Jogando</string>
 </resources>

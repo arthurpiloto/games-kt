@@ -1,5 +1,6 @@
 package br.senai.sp.jandira.games.ui
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,7 +13,7 @@ import br.senai.sp.jandira.games.repository.UsuarioRepository
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     lateinit var usuarioRepository: UsuarioRepository
-    lateinit var usuario: Usuario
+    var usuario: Usuario? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,24 +27,31 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.buttonLogin.setOnClickListener {
-            login()
+            if (login()) {
+                usuarioRepository = UsuarioRepository(this)
+                usuario = usuarioRepository.getUsuarioByEmail(binding.editTextEmail.text.toString())
+
+                val openGameListActivity = Intent(this, GameListActivity::class.java)
+                openGameListActivity.putExtra("id", usuario?.id)
+                startActivity(openGameListActivity)
+            }
         }
     }
 
     private fun login(): Boolean {
         if (validate()) {
-            var infoEmail = usuarioRepository.getUsuarioByEmail(binding.editTextEmail.text.toString())
+            usuarioRepository = UsuarioRepository(this)
+            usuario = usuarioRepository.getUsuarioByEmail(binding.editTextEmail.text.toString()) // retorna o usuario com o email digitado
 
-            if (infoEmail === null) {
+            if (usuario === null) {
                 Toast.makeText(this, R.string.email_notfound, Toast.LENGTH_SHORT).show()
                 return false
-            } else if (usuario.senha != binding.editTextPassword.text.toString()) {
+            }
+            if (binding.editTextPassword.text.toString() != usuario?.senha) {
                 Toast.makeText(this, R.string.password_notfound, Toast.LENGTH_SHORT).show()
                 return false
             }
-
-            val openGameListActivity = Intent(this, GameListActivity::class.java)
-            startActivity(openGameListActivity)
+            return true
         }
         return false
     }
