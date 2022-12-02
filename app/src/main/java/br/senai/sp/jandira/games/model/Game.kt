@@ -5,6 +5,7 @@ import android.graphics.drawable.Drawable
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import java.time.LocalDate
 
 @Entity(tableName = "tbl_game")
 class Game {
@@ -13,11 +14,11 @@ class Game {
 
 //    var imagem: Bitmap? = null
     var estudio = ""
-    var titulo = ""
+    var nome = ""
     var descricao = ""
 
     var finalizado: Boolean = false
 
-    @ColumnInfo(name = "ano_lancamento")
-    var anoLancamento = ""
+//    @ColumnInfo(name = "ano_lancamento")
+//    var anoLancamento: LocalDate? = null
 }

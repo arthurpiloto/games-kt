@@ -15,7 +15,6 @@ class SignupActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySignupBinding
     lateinit var usuarioRepository: UsuarioRepository
     lateinit var usuario: Usuario
-    private var id = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,21 +23,23 @@ class SignupActivity : AppCompatActivity() {
 
         usuario = Usuario()
 
+        binding.gamerLevelSignup.text = getString(NiveisEnum.INICIANTE.res)
+
         binding.sliderSignup.addOnChangeListener { slider, value, fromUser ->
-            binding.gamerLevelSignup.text = getSliderText(binding.sliderSignup.value.toInt()).toString()
+            binding.gamerLevelSignup.text = getSliderText(binding.sliderSignup.value.toInt())
         }
     }
 
-    private fun getSliderText(position: Int): NiveisEnum {
-        if (position <= 0) return NiveisEnum.INICIANTE
-        if (position in 1..1) return NiveisEnum.BASICO
-        if (position in 2..2) return NiveisEnum.CASUAL
-        if (position in 3..3) return NiveisEnum.AVANCADO
-        return NiveisEnum.INICIANTE
+    private fun getSliderText(position: Int): String {
+        if (position <= 0) return getString(NiveisEnum.INICIANTE.res)
+        if (position in 1..1) return getString(NiveisEnum.BASICO.res)
+        if (position in 2..2) return getString(NiveisEnum.CASUAL.res)
+        if (position in 3..3) return getString(NiveisEnum.AVANCADO.res)
+        return getString(NiveisEnum.INICIANTE.res)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.title.toString() == "Save") {
+        if (item.title == "Save") {
             if (validate()) {
                 usuario.nome = binding.editTextNameSignup.text.toString()
                 usuario.cidade = binding.editTextCitySignup.text.toString()
@@ -52,14 +53,14 @@ class SignupActivity : AppCompatActivity() {
                     3 -> usuario.nivel = NiveisEnum.AVANCADO
                 }
 
-                if (binding.buttonFemaleSignup.isSelected) {
+                if (binding.buttonFemaleSignup.isChecked) {
                     usuario.sexo = 'F'
                 } else {
                     usuario.sexo = 'M'
                 }
 
                 usuarioRepository = UsuarioRepository(this)
-                val id = usuarioRepository.save(usuario)
+                usuarioRepository.save(usuario)
                 Toast.makeText(this, R.string.user_created, Toast.LENGTH_SHORT).show()
                 finish()
             } else {

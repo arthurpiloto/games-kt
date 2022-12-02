@@ -61,4 +61,16 @@
     <string name="game_status">Status do jogo:</string>
     <string name="game_status_finished">Finalizado</string>
     <string name="game_status_playing">Jogando</string>
+
+    <string name="game_name_error">Nome é obrigatório!</string>
+    <string name="game_description_error">Descrição é obrigatória!</string>
+    <string name="game_studio_error">Estúdio é obrigatório!</string>
+    <string name="game_release_error">Data de lançamento é obrigatória!</string>
+    <string name="game_created">Jogo criado com sucesso</string>
+
+    <!--  ENUM STRINGS  -->
+    <string name="begginer">Iniciante</string>
+    <string name="basic">Básico</string>
+    <string name="casual">Casual</string>
+    <string name="advanced">Avançado</string>
 </resources>

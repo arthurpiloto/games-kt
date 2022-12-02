@@ -19,14 +19,13 @@ class GamesAdapter(val context: Context) : RecyclerView.Adapter<GamesAdapter.Hol
     }
 
     class HolderGame(view: View) : RecyclerView.ViewHolder(view) {
-        val imageHolderGame = view.findViewById<ImageView>(R.id.game_image_holder)
         val subtitleGame = view.findViewById<TextView>(R.id.text_view_subtitulo)
         val titleGame = view.findViewById<TextView>(R.id.text_view_titulo)
         val descriptionGame = view.findViewById<TextView>(R.id.text_view_descricao)
 
         fun bind(game: Game) {
             subtitleGame.text = game.estudio
-            titleGame.text = game.titulo
+            titleGame.text = game.nome
             descriptionGame.text = game.descricao
         }
     }

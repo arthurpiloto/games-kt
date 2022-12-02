@@ -60,4 +60,16 @@
     <string name="game_status">Game status:</string>
     <string name="game_status_finished">Finished</string>
     <string name="game_status_playing">Playing</string>
+
+    <string name="game_name_error">The name is required!</string>
+    <string name="game_description_error">The description is required!</string>
+    <string name="game_studio_error">The studio is required!</string>
+    <string name="game_release_error">The release date is required!</string>
+    <string name="game_created">Game created successfully</string>
+
+    <!--  ENUM STRINGS  -->
+    <string name="begginer">Begginer</string>
+    <string name="basic">Basic</string>
+    <string name="casual">Casual</string>
+    <string name="advanced">Advanced</string>
 </resources>
